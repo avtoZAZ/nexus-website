@@ -411,11 +411,13 @@
       line-height: 1.1;
       margin-bottom: 24px;
       position: relative;
+    z-index: 2;
     }
 
     .glitch {
       position: relative;
       color: var(--color-white);
+      z-index: 1;
     }
 
     .glitch::before,
@@ -427,6 +429,7 @@
       width: 100%;
       height: 100%;
       background: transparent;
+       z-index: 1;
     }
 
     .glitch::before {
