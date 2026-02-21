@@ -411,15 +411,16 @@
       line-height: 1.1;
       margin-bottom: 24px;
       position: relative;
-    z-index: 2;
     }
 
     .glitch {
       position: relative;
       color: var(--color-white);
-      z-index: 1;
+      
     }
-
+.text-glitch{
+z-index: 2;
+}
     .glitch::before,
     .glitch::after {
       content: attr(data-text);
@@ -1827,7 +1828,7 @@
     <div class="hero-content">
       <p class="hero-eyebrow">/// Welcome to the future ///</p>
       <h1 class="hero-title">
-        <span class="glitch" data-text="WELCOME TO THE NEXUS">WELCOME TO THE NEXUS</span>
+        <span class="glitch" data-text="WELCOME TO THE NEXUS"><span class='text-glitch'>WELCOME TO THE NEXUS</span></span>
       </h1>
       <div class="hero-typing-wrap" aria-live="polite">
         We build&nbsp;<span class="typing-text" id="typingText"></span><span class="typing-cursor" aria-hidden="true"></span>
